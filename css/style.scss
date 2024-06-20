@@ -1,0 +1,70 @@
+@use "../css/sass/layouts/global-role";
+@use "../css/sass/layouts/color" as *;
+@use "../css/sass/layouts/variabels" as *;
+
+/*start fonts*/
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "Poppins-Black";
+  src: url(../fonts/Poppins-Black.ttf);
+}
+/*start fonts*/
+body {
+  font-family: "Poppins-Medium";
+}
+/*global btn*/
+.global-btn {
+  background-color: $main-color;
+  color: $white-color;
+  &:hover {
+    background-color: $main-color;
+    color: $white-color;
+  }
+}
+/*global btn*/
+
+/*start header*/
+header {
+  nav {
+    .navbar-brand {
+      font: {
+        family: "Poppins-Black";
+        size: 37px;
+      }
+      img {
+        width: 31.26px;
+        height: 29px;
+      }
+      @media (max-width: 460px) {
+        font-size: 27px;
+      }
+    }
+    ul {
+      gap: 40px;
+      li {
+        position: relative;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+/*animation hover link*/
+@keyframes link-hover {
+  0%,
+  25% {
+  }
+}
+/*animation hover link*/
+/*end header*/

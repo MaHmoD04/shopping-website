@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a, span, img {
+  display: inline-block;
+}
+
+img {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*start fonts*/
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "Poppins-Black";
+  src: url(../fonts/Poppins-Black.ttf);
+}
+/*start fonts*/
+body {
+  font-family: "Poppins-Medium";
+}
+
+/*global btn*/
+.global-btn {
+  background-color: #000000;
+  color: #ffffff;
+}
+.global-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/*global btn*/
+/*start header*/
+header nav .navbar-brand {
+  font-family: "Poppins-Black";
+  font-size: 37px;
+}
+header nav .navbar-brand img {
+  width: 31.26px;
+  height: 29px;
+}
+@media (max-width: 460px) {
+  header nav .navbar-brand {
+    font-size: 27px;
+  }
+}
+header nav ul {
+  gap: 40px;
+}
+header nav ul li {
+  position: relative;
+  overflow: hidden;
+}
+
+/*animation hover link*/
+@keyframes link-hover {}
+/*animation hover link*/
+/*end header*//*# sourceMappingURL=style.css.map */
