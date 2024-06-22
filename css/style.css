@@ -50,11 +50,24 @@ body {
 /*global btn*/
 .global-btn {
   background-color: #000000;
+  border: 2px solid #000000;
   color: #ffffff;
+  transition: 0.35s;
+  -webkit-transition: 0.35s;
+  -moz-transition: 0.35s;
+  -ms-transition: 0.35s;
+  -o-transition: 0.35s;
 }
 .global-btn:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #000000;
+  color: #000000;
+  transform: translateY(-6px);
+  box-shadow: 6px 8px 0px #000000;
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
 }
 
 /*global btn*/
@@ -123,7 +136,7 @@ header nav ul li a.global-btn {
 }
 .welcome .parent {
   position: relative;
-  padding: 70px 50px 0;
+  padding: 70px 50px;
   background-color: #f4f6f5;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -315,8 +328,137 @@ header nav ul li a.global-btn {
 /* end arrivals section*/
 /* start sales section*/
 .sales {
-  padding: 90px 0;
-  background: linear-gradient(to top, #E0C340, #F9DF56);
+  padding: 90px 0 0;
+  background: linear-gradient(to top, #d4b83c, #f9df56);
+}
+.sales .sales-content-parent {
+  flex-wrap: wrap;
+}
+.sales .sales-content-parent .sales-children {
+  position: relative;
+  flex: 1 1;
+  flex-basis: 45%;
+}
+@media (max-width: 991px) {
+  .sales .sales-content-parent .sales-children {
+    flex-basis: 100%;
+  }
+}
+.sales .sales-content-parent .sales-children img:nth-child(1) {
+  filter: drop-shadow(34px 0px 50px black);
+  position: relative;
+  z-index: 11;
+}
+.sales .sales-content-parent .sales-children img.stars {
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  z-index: 1;
+}
+.sales .sales-content-parent .sales-children img.stars:nth-child(2) {
+  top: 50px;
+  left: 100px;
+}
+.sales .sales-content-parent .sales-children img.stars:nth-child(3) {
+  bottom: 0;
+  left: 60px;
+}
+.sales .sales-content-parent .sales-children img.stars:nth-child(4) {
+  top: 0;
+  right: 60px;
+}
+.sales .sales-content-parent .sales-children img.stars:nth-child(5) {
+  bottom: 60px;
+  right: 60px;
+}
+.sales .sales-content-parent .sales-children .content-text-sales {
+  padding: 30px 60px;
+}
+@media (max-width: 991px) {
+  .sales .sales-content-parent .sales-children .content-text-sales {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .sales .sales-content-parent .sales-children .content-text-sales {
+    padding: 0;
+  }
+}
+.sales .sales-content-parent .sales-children .content-text-sales h2 {
+  margin-bottom: 33px;
+  color: #000000;
+  font-family: "Poppins-Black";
+  font-size: 80px;
+}
+.sales .sales-content-parent .sales-children .content-text-sales h2 span {
+  position: relative;
+  z-index: 111;
+}
+.sales .sales-content-parent .sales-children .content-text-sales h2 span::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -23px;
+  top: -5px;
+  width: 400px;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: -1;
+  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+}
+@media (max-width: 767px) {
+  .sales .sales-content-parent .sales-children .content-text-sales h2 span::before {
+    width: 100%;
+    left: -5px;
+    transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+  }
+}
+@media (max-width: 767px) {
+  .sales .sales-content-parent .sales-children .content-text-sales h2 {
+    font-size: 40px;
+  }
+}
+.sales .sales-content-parent .sales-children .content-text-sales p {
+  color: #231300;
+  width: 481px;
+  margin-bottom: 30px;
+  font-family: "Poppins-Medium";
+  font-size: 26px;
+}
+@media (max-width: 767px) {
+  .sales .sales-content-parent .sales-children .content-text-sales p {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+.sales .sales-content-parent .sales-children .content-text-sales .date {
+  padding-bottom: 30px;
+}
+.sales .sales-content-parent .sales-children .content-text-sales .date h4 {
+  margin-bottom: 10px;
+  color: #000000;
+  font-family: "Poppins-Bold";
+  font-size: 30px;
+}
+@media (max-width: 767px) {
+  .sales .sales-content-parent .sales-children .content-text-sales .date h4 {
+    font-size: 22px;
+  }
+}
+.sales .sales-content-parent .sales-children .content-text-sales .date p {
+  margin-bottom: 25px;
+}
+.sales .sales-content-parent .sales-children .content-text-sales .date button {
+  font-size: 20px;
+  padding: 10px 25px;
 }
 
 /* end sales section*//*# sourceMappingURL=style.css.map */
