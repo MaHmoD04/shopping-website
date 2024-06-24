@@ -22,6 +22,7 @@
 /*start fonts*/
 body {
   font-family: "Poppins-Medium";
+  overflow-x: hidden;
 }
 /*global btn*/
 .global-btn {
@@ -465,10 +466,10 @@ header {
     }
     &:hover svg {
       transform: rotate(-30deg);
-            -webkit-transform: rotate(-30deg);
-            -moz-transform: rotate(-30deg);
-            -ms-transform: rotate(-30deg);
-            -o-transform: rotate(-30deg);
+      -webkit-transform: rotate(-30deg);
+      -moz-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+      -o-transform: rotate(-30deg);
     }
     img {
       margin-bottom: 28px;
@@ -478,14 +479,14 @@ header {
       -ms-border-radius: $radius-20;
       -o-border-radius: $radius-20;
     }
-      svg {
-        color: $button-color;
-        font-size: 20px;
-        transition: $transitions;
-        -webkit-transition: $transitions;
-        -moz-transition: $transitions;
-        -ms-transition: $transitions;
-        -o-transition: $transitions;
+    svg {
+      color: $button-color;
+      font-size: 20px;
+      transition: $transitions;
+      -webkit-transition: $transitions;
+      -moz-transition: $transitions;
+      -ms-transition: $transitions;
+      -o-transition: $transitions;
     }
     .link {
       a {
@@ -511,3 +512,200 @@ header {
   }
 }
 /*end young section*/
+
+/*start app section*/
+.download-app {
+  padding: 70px 0;
+  .content-app {
+    h3 {
+      line-height: 70px;
+      color: $main-color;
+      margin-bottom: 40px;
+      font : {
+        family: "Poppins-Black";
+        size: 48px;
+      }
+      @media (max-width: 450px) {
+        font-size: 30px;
+        line-height: 1.3;
+      }
+    }
+    p {
+      color: $button-color;
+      margin-bottom: 50px;
+      font : {
+        family: "Poppins-Medium";
+        size: 24px;
+      }
+      @media (max-width: 450px) {
+        font-size: 19px;
+        margin-bottom: 30px;
+      }
+    }
+    .app-link {
+      gap: 19px;
+    }
+    .circle {
+      border: 3px solid #efeceb;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      &.circle-1 {
+        width: 450px;
+        height: 450px;
+        @media (max-width: 400px) {
+          width: 350px;
+          height: 350px;
+        }
+      }
+      &.circle-2 {
+        width: 550px;
+        height: 550px;
+        @media (max-width: 400px) {
+          width: 400px;
+          height: 400px;
+        }
+      }
+      &.circle-3 {
+        width: 650px;
+        height: 650px;
+        @media (max-width: 400px) {
+          width: 450px;
+          height: 450px;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1199px) {
+        display: none;
+      }
+    }
+    .circle-color {
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+    .color1 {
+      top: 150px;
+      right: -10px;
+      background-color: $secondry-color;
+      width: 50px;
+      height: 50px;
+    }
+    .color2 {
+      bottom: 200px;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      background-color: #89807a;
+    }
+    .color3 {
+      top: 200px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background-color: #89807a;
+    }
+    .color4 {
+      bottom: 200px;
+      left: 0;
+      width: 34px;
+      height: 34px;
+      background-color: $secondry-color;
+    }
+  }
+}
+/*end app section*/
+
+/* start community section*/
+.community {
+  padding: 120px 0;
+  background-color: $secondry-color;
+  .details-community {
+    h2 {
+      width: 900px;
+      color: $white-color;
+      font: {
+        size: 55px;
+        family: "Poppins-Bold";
+      }
+      @media (max-width: 991px) {
+        width: 100%;
+        font-size: 35px;
+        text-align: left;
+      }
+    }
+    p {
+      color: $white-color;
+      font-size: 30px;
+      margin-bottom: 40px;
+      @media (max-width: 991px) {
+        text-align: left;
+        font-size: 20px;
+      }
+    }
+    form {
+      .email {
+        background-color: #ffffff;
+        width: 570px;
+        padding: 27px 20px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        input[type="email"] {
+          border: none;
+          top: 50%;
+          width: 80%;
+          padding-left: 20px;
+          left: 0;
+          background-color: transparent;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          @media (max-width: 767px) {
+            width: 60%;
+          }
+        }
+        input[type="submit"] {
+          background-color: $main-color;
+          font-size: 25px;
+          color: $white-color;
+          padding: 1px 20px;
+          right: 10px;
+          top: 50%;
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          @media (max-width: 767px) {
+            padding: 1px 10px;
+          }
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+/* end community section*/
