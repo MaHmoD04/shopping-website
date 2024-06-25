@@ -869,4 +869,39 @@ footer .list-link ul li a {
   }
 }
 
-/* end footer*//*# sourceMappingURL=style.css.map */
+/* end footer*/
+/* scroll top button*/
+.scroll-top a {
+  box-shadow: 0px 0px 80px #000000;
+  background-color: #e6c744;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 40px;
+  right: -100px;
+  z-index: 11111111111111110000;
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.35s;
+  -webkit-transition: 0.35s;
+  -moz-transition: 0.35s;
+  -ms-transition: 0.35s;
+  -o-transition: 0.35s;
+}
+.scroll-top a svg {
+  color: #000000;
+  font-size: 26px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+/* scroll top button*/
+.show {
+  right: 40px !important;
+}/*# sourceMappingURL=style.css.map */
