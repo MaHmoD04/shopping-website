@@ -11,9 +11,3 @@ btnTop.onclick = function () {
     behavior: "smooth",
   });
 };
-
-// GSAP
-gsap.to(".arrivals", {
-  scrollTrigger: ".box", // start the animation when ".box" enters the viewport (once)
-  x: -100,
-});
