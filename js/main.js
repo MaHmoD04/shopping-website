@@ -11,3 +11,28 @@ btnTop.onclick = function () {
     behavior: "smooth",
   });
 };
+
+// Scroll Reveal
+ScrollReveal().reveal('.circle', {
+  delay: 450,
+    distance: '350px'
+});
+ScrollReveal().reveal('.circle-1', {
+  duration: 200
+});
+ScrollReveal().reveal('.circle-2', {
+  duration: 400
+});
+ScrollReveal().reveal('.circle-3', {
+  duration: 600
+});
+
+// AOS 
+AOS.init();
+//start values
+AOS.init({
+  dispaly: true,
+  startEvent: 'DOMContentLoaded',
+  initClassName: 'aos-init',
+  
+});
