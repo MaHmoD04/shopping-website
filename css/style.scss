@@ -22,7 +22,7 @@
 /*start fonts*/
 body {
   font-family: "Poppins-Medium";
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 /*global btn*/
 .global-btn {
@@ -850,15 +850,15 @@ footer {
     background-color: $secondry-color;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    border-radius: 20%;
     position: fixed;
     bottom: 40px;
     right: -100px;
     z-index: 11111111111111111111;
     -webkit-border-radius: 20%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
     transition: $transitions;
     -webkit-transition: $transitions;
     -moz-transition: $transitions;
